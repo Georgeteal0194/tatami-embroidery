@@ -1,0 +1,32 @@
+$imagen-width: 150px;
+$imagen-height: 150px;
+
+.imagen-redimensionada-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Dos columnas de igual tamaño
+  gap: 20px; // Espacio entre las columnas y filas
+  margin-bottom: 20px; // Espacio entre cada contenedor, opcional
+  
+  .imagen-redimensionada {
+    width: 100%; // Asegura que la imagen ocupe todo el ancho de su celda
+    height: auto; // Mantén la proporción de la imagen
+    
+    &-2 {
+      width: $imagen-width;
+      height: $imagen-height;
+    }
+  }
+
+  .texto {
+    font-size: 16px; // Tamaño del texto, ajustable
+    color: #333; // Color del texto, ajustable
+    align-self: self-end; // Centra verticalmente el texto en su celda
+    flex: 1 1 50%;
+    min-width: 500px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 180px;
+    text-align: center;
+   
+  }
+}
