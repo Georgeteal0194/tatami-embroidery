@@ -5,75 +5,273 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com" >
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/styles.css" as="styles">
-    <link href="css/styles.css" rel="stylesheet">
-    <title>TATAMI EMBROIDERY</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="a.css">
 
+    <title>TATAMI EMBROIDERY</title>
 </head>
 
 <body>
     <header>
-        <!--logo-->
-        <a href="index.html">
-            <img src="imagenes/logo_tatami.png" class="logo_img" alt="logo de tatami embroidery">
-        </a>
-        <nav>
-            <ul >
-                <li><a href="index.html">Lo mas vendido🔥 </a></li>
-                <li><a href="paginas/regalos.html">Regalos 🎁  </a></li>
-                <li><a href="paginas/contacto.html"> Contacto 🛍️ </a></li>
-                <li><a href="paginas/personalizado.html">Persolanizado 🔮</a></li>
-            </ul>
-        </nav>
-    </header> 
 
-    <h2 class="encabezado-decorado"> Arte en cada hilo, amor en cada puntada.</h2>
-    <div class="producto-contenedor">
-        <div class="producto-video">
-            <video controls>
-                <source src="imagenes/video_presentacion.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
-        </div>
-        <div class="producto-descripcion">
-            <h3>"Sudaderas Diseñadas para Cada Estilo que Imagina"</h3>
-            <p>En Tatami Embroidery, nos dedicamos a transformar cada prenda en una obra de arte, diseñada meticulosamente para que nuestros compradores no solo vistan, sino que también lleven consigo un estilo único y exclusivo. Cada pieza es una expresión de creatividad y dedicación, asegurando que siempre tengas a la mano algo verdaderamente especial y original para destacar entre la multitud.</p>
-        </div>
-    </div>
-    
+        <div class="header-content">
 
-    <main>
-        <div class="gridGaleria">
-            <article class="cuadroGaleria">          
-                <a class="cuadroGaleriaTitulo" href="#">RESEÑAS</a>
-                <div class="cuadroGaleriaImagen">
-                    <img class="imgRegalos" src="imagenes/ECPLISE.jpg" alt="RESEÑAS">  
+            <div class="container hero">
+                <div class="custumer-support">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="content-custumer-support">
+                        <span class="text">Soporte al cliente</span>
+                        <span class="number"> 55 56 55 56 55</span>
+                    </div>
                 </div>
-            </article>
-            <div class="main-content">
-                <p> "las sudaderas las encuentro con una calidad excelente y el bordado esta muy hermoso "
-                </p>
             </div>
-            <a href="paginas/contacto.html">
-                <img src="imagenes/reseñas imagen 2.png" alt="reseñan imagen derecha" class="corner-image">
-            </a>
+
+            <div class="container-logo">
+                <img src="imagenes/logo_tatami.png" alt="logo de la marca ">
+            </div>
+
+            <div class="container-user">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="content-shopping-cart">
+                    <span class="text">carrito</span>
+                    <span class="number">(0)</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-navbar">
+            <nav class="navbar container">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./paginas/regalos.html">Lo más vendido</a></li>
+                    <li><a href="./paginas/regalos">Regalos</a></li>
+                    <li><a href="./paginas/personalizado.html">Personalizado</a></li>
+                    <li><a href="./paginas/gracias.html">Blog</a></li>
+                </ul>
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar..." />
+                    <button class="btn-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="banner">
+        <div class="content-banner">
+            <p>Amor en cada puntada</p>
+            <h2>Bordados 100% a tu estilo</h2>
+            <a href="#">Comprar ahora (solicita tu cotizacion)</a>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <section class="container container-features">
+                <div class="card-feature">
+                    <i class="fa-solid fa-truck"></i>
+                        <div class="feature-content">
+                            <span>Envios a todo el pais</span>
+                            <p>En pedido superior a $800 MXN</p>
+                </div>
+                <div class="card-feature">
+                    <i class="fa-solid fa-wallet"></i>
+                        <div class="feature-content">
+                            <span>Contraembolso</span>
+                            <p>100% garantia de tu dinero</p>
+                </div>
+                <div class="card-feature">
+                    <i class="fa-brands fa-paypal"></i>
+                        <div class="feature-content">
+                            <span>Pago seguro y confiable</span>
+                            <p>Tu dinero seguro </p>
+                </div>
+
+                <div class="card-feature">
+                    <i class="fa-solid fa-gift"></i>
+                        <div class="feature-content">
+                            <span>tarjetas de regalo y cupones</span>
+                            <p>Acumulando pedidos tendras descuentos con nosotros</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="container top-categories">
+            <h1 class="heading-1"> Categorias</h1>
+            <div class="container-categories">
+                <div class="card-category category-regalos">
+                    <p>Regalos</p>
+                    <span>Ver más</span>
+            </div>
+            <div class="container-categories">
+                <div class="card-category category-artistas">
+                    <p>Artistas</p>
+                    <span>Ver más</span>
+            </div>
+            <div class="container-categories">
+                <div class="card-category category-nostalgia">
+                    <p>Nostalgìa</p>
+                    <span>Ver más</span>
+            </div>
+            </div>
+        </section>
+        <section class="container top-products">
+            <h1 class="heading-1">Lo mas vendido</h1>
+            <div class="container-options">
+                <span class="active">Destacados</span>
+                <span class=>Mas recientes</span>
+            </div>
+        <!-- producto1 -->
+            <div class="container-products">
+                <div class="card-product">
+                    <div class="container-img">
+                        <img src="./imagenes/MIL89.jpeg" alt="Midnights">
+                        <span class="discount">-13%</span>
+                        <div class="button-group">
+                            <span>
+                                <i class="fa-solid fa-eye"></i> 
+                            </span>
+                            <span>
+                                <i class="fa-regular fa-heart"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="content-card-product">
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <h3>Sudadera Midnights</h3>    
+                        <span class="add-cart">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+                        <p class="price">$520 MXN <span>$560</span></p>
+                    </div>
+                </div>
+        <!-- producto 2 -->
+            <div class="container-products">
+                    <div class="card-product">
+                        <div class="container-img">
+                            <img src="./imagenes/imagenes regalos/artistas2.jpeg" alt="Midnights">
+                            <span class="discount">-13%</span>
+                            <div class="button-group">
+                                <span>
+                                    <i class="fa-solid fa-eye"></i> 
+                                </span>
+                                <span>
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+                                <span>
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="content-card-product">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <h3>Sudadera Midnights</h3>    
+                            <span class="add-cart">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </span>
+                            <p class="price">$520 MXN <span>$560</span></p>
+                        </div>
+                    </div>
+        <!-- producto3 -->
+            <div class="container-products">
+                        <div class="card-product">
+                            <div class="container-img">
+                                <img src="./imagenes/cornelia_streer.jpeg" alt="Midnights">
+                                <span class="discount">-13%</span>
+                                <div class="button-group">
+                                    <span>
+                                        <i class="fa-solid fa-eye"></i> 
+                                    </span>
+                                    <span>
+                                        <i class="fa-regular fa-heart"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="content-card-product">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <h3>Sudadera Midnights</h3>    
+                                <span class="add-cart">
+                                    <i class="fa-solid fa-basket-shopping"></i>
+                                </span>
+                                <p class="price">$520 MXN <span>$560</span></p>
+                            </div>
+                        </div>
+                </div>
+            </div>
     </main>
+
     <footer class="footer">
-        <div class="redes">
-            <a href="https://www.facebook.com/profile.php?id=100094243774654" target="_blank">
-                <img src="imagenes/logo fb tatami.png" class="imagen-redimensionada-3" alt="Logo de Facebook">
-            </a>
-            <a href="https://www.instagram.com/tatamithreadstore10/" target="_blank">
-                <img src="imagenes/logo ig tatami.png" class="imagen-redimensionada-3" alt="Logo de Instagram">
-            </a>
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Informacion de contacto</p>
+                    <ul>
+                        <li>
+                            Av. de las aguas 89 Rio Santa Coleta,CP 
+                            09054
+                        </li>
+                        <li> Telèfono 55-56-55-56</li>
+                        <li>email:tatamiembroidery@outlook.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                        <span class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </span>
+                        <span class="spotify">
+                            <i class="fa-brands fa-spotify"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="infromation">
+                    <p class="title-footer">informacion</p>
+                    <ul>
+                        <li><a href="#">Acerca de nosotros</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="texto">
-            <p>2023 - Todos los derechos reservados.</p>
-        </div>
+
     </footer>
-    
+    <script src="https://kit.fontawesome.com/2d03e008d9.js" crossorigin="anonymous"></script>
+        
+
 </body>
 
 </html>
