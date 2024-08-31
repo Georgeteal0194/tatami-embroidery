@@ -19,9 +19,9 @@ html {
 
 /* UTILIDADES */
 .container {
-    max-width: 120rem;
-    margin: 0 auto;
-    background-color: var(--background-color);
+    max-width: 180rem;
+    margin:0 auto;
+    background-color: var(--background-color)
 }
 
 .heading-1{
@@ -307,18 +307,21 @@ html {
 
 /* categorias */
 .top-categories{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  flex-direction:column;
   margin-bottom: 3rem;
+  background-color: #007bff;
 }
 
 .container-categories{
   display: grid;
-  grid-template-columns:repeat(3,1fr);
+
   gap: 3rem;
-  background-color:var(--background-color);
+  background-color:#be8a1a;
   align-items: center;
   margin:0 0;
+  justify-items: center;
 }
 
 .card-category{
@@ -329,6 +332,7 @@ html {
   justify-content: center;
   border-radius: 2rem;
   gap: 2rem;
+  background-color: #e28f69;
 }
 
 .category-regalos{
@@ -336,6 +340,8 @@ html {
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  height: 20rem;
+  width: 25rem;
   
 
 }
@@ -395,10 +401,12 @@ html {
 
 .top-products{
   display: flex;
-  flex-direction: column;
+  grid-template-columns: repeat(3,1fr);
+  /* flex-direction: column; */
   gap: 2rem;
   margin-bottom: 3rem;
 }
+
 .container-options{
   display: flex;
   justify-content: center;
@@ -666,7 +674,7 @@ nav {
   justify-content: center;
 } */
 
- .cuadroGaleria {
+.cuadroGaleria {
   position: sticky;
 }
 
